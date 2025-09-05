@@ -5,7 +5,7 @@ import GeneralReportModal from '@/components/sleeptime/GeneralReportModal';
 
 export default function SleepTimeSection() {
     return (
-        <section className="sm:px-[20px] md:px-[200px] lg:px-[400px] pt-3">
+        <section className="sm:px-[20px] md:px-[200px] lg:px-[400px] pt-3 min-h-[600px]">
 
             <SetTimer />
 
