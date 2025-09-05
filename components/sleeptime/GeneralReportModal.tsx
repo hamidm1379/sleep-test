@@ -9,7 +9,7 @@ export default function GeneralReportModal() {
     const bottomSectionRef = useRef(null);
 
     useEffect(() => {
-        const handleClickOutside = (event) => {
+        const handleClickOutside = (event: { target: any; }) => {
             if (isExpanded && bottomSectionRef.current && !bottomSectionRef.current.contains(event.target)) {
                 setIsExpanded(false);
             }
