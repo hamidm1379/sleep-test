@@ -24,3 +24,58 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.background-container {
+  position: relative;
+  background-image: url('/image/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.background-container::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fffffffc;
+  z-index: -1;
+}
+
+.rmdp-container {
+  width: 100% !important;
+}
+
+.custom-input {
+  border-radius: 8px;
+  border: 1px #E5E7EB solid;
+  padding: 4px 16px;
+  background-color: white;
+  height: 40px;
+  width: 100%;
+  box-shadow: 0 0 2px #0074d9;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.custom-input:focus {
+  outline: none;
+  border: 1px solid #757575;
+}
+
+.recharts-wrapper {
+  margin: auto;
+}
+
+.chart-container {
+  width: 100% !important;
+}
+
+.customModal {
+  position: relative;
+  border-radius: 12px;
+  padding: 16px !important;
+}
