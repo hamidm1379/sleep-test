@@ -23,12 +23,12 @@ export default function AddSleepTime() {
         const s = startDate.toDate();
         const e = endDate.toDate();
 
-        let diffMs = e.getTime() - s.getTime();
+        const diffMs = e.getTime() - s.getTime();
         if (diffMs < 0) return "تاریخ پایان قبل از شروع است";
 
-        let diffMinutes = Math.floor(diffMs / (1000 * 60));
-        let hours = Math.floor(diffMinutes / 60);
-        let minutes = diffMinutes % 60;
+        const diffMinutes = Math.floor(diffMs / (1000 * 60));
+        const hours = Math.floor(diffMinutes / 60);
+        const minutes = diffMinutes % 60;
 
         return `${hours} ساعت  و ${minutes} دقیقه `;
     };
