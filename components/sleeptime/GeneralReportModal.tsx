@@ -6,11 +6,11 @@ import Link from 'next/link';
 export default function GeneralReportModal() {
 
     const [isExpanded, setIsExpanded] = useState(false);
-    const bottomSectionRef = useRef(null);
+    const bottomSectionRef =  useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const handleClickOutside = (event: { target: any; }) => {
-            if (isExpanded && bottomSectionRef.current && !bottomSectionRef.current.contains(event.target)) {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (isExpanded && bottomSectionRef.current && !bottomSectionRef.current.contains(event.target as Node)) {
                 setIsExpanded(false);
             }
         };
