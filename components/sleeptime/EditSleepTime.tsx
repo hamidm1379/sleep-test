@@ -62,6 +62,7 @@ export default function EditSleepTime() {
                                 <div className='text-lg'>زمان شروع</div>
                                 <div className='text-center mt-3'>
                                     <DatePicker
+                                        key={1}
                                         value={start}
                                         onChange={handleChangeStart}
                                         format="MM/DD/YYYY , ساعت HH:mm:ss"
@@ -80,6 +81,7 @@ export default function EditSleepTime() {
                                 <div className='text-lg'>زمان پایان</div>
                                 <div className='text-center mt-3'>
                                     <DatePicker
+                                        key={2}
                                         value={end}
                                         onChange={handleChangeEnd}
                                         format="MM/DD/YYYY , ساعت HH:mm:ss"

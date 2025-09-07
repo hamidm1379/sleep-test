@@ -15,7 +15,7 @@ export default function AddSleepTime() {
     const [end, setEnd] = useState<DateObject | null>(null);
     const [diff, setDiff] = useState<string>("");
     const [isOpen, setOpen] = useState(false);
-    const [minDate, setMinDate] = useState<any>(null);
+    const [minDate, setMinDate] = useState<any | null>(null);
 
     const calcDiff = (startDate: DateObject | null, endDate: DateObject | null): string => {
         if (!startDate || !endDate) return "";
@@ -64,6 +64,7 @@ export default function AddSleepTime() {
                             <div className='text-lg'>زمان شروع</div>
                             <div className='text-center mt-3'>
                                 <DatePicker
+                                    key={1}
                                     value={start}
                                     onChange={handleChangeStart}
                                     format="MM/DD/YYYY , ساعت HH:mm:ss"
@@ -83,6 +84,7 @@ export default function AddSleepTime() {
                             <div className='text-lg'>زمان پایان</div>
                             <div className='text-center mt-3'>
                                 <DatePicker
+                                    key={2}
                                     value={end}
                                     onChange={handleChangeEnd}
                                     format="MM/DD/YYYY , ساعت HH:mm:ss"
