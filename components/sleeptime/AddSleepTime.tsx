@@ -15,7 +15,7 @@ export default function AddSleepTime() {
     const [end, setEnd] = useState<DateObject | null>(null);
     const [diff, setDiff] = useState<string>("");
     const [isOpen, setOpen] = useState(false);
-    const [minDate, setMinDate] = useState<any | null>(null);
+    const [minDate, setMinDate] = useState<Date | null>(null);
 
     const calcDiff = (startDate: DateObject | null, endDate: DateObject | null): string => {
         if (!startDate || !endDate) return "";
@@ -75,7 +75,7 @@ export default function AddSleepTime() {
                                     plugins={[
                                         <TimePicker key={1} position="top" />
                                     ]}
-                                    minDate={minDate}
+                                    minDate={minDate === null ? undefined : minDate}
                                     placeholder="زمان شروع"
                                 />
                             </div>
@@ -95,7 +95,7 @@ export default function AddSleepTime() {
                                     plugins={[
                                         <TimePicker key={2} position="top" />
                                     ]}
-                                    minDate={minDate}
+                                    minDate={minDate === null ? undefined : minDate}
                                     placeholder="زمان پایان"
                                 />
                             </div>
