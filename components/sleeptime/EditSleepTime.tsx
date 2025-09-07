@@ -71,7 +71,7 @@ export default function EditSleepTime() {
                                         calendarPosition="bottom-right"
                                         inputClass="custom-input"
                                         plugins={[
-                                            <TimePicker position="top" />
+                                            <TimePicker key={1} position="top" />
                                         ]}
                                         placeholder="زمان شروع"
                                     />
@@ -90,7 +90,7 @@ export default function EditSleepTime() {
                                         calendarPosition="bottom-right"
                                         inputClass="custom-input"
                                         plugins={[
-                                            <TimePicker position="top" />
+                                            <TimePicker key={2} position="top" />
                                         ]}
                                         placeholder="زمان پایان"
                                     />
