@@ -15,7 +15,7 @@ export default function AddSleepTime() {
     const [end, setEnd] = useState<DateObject | null>(null);
     const [diff, setDiff] = useState<string>("");
     const [isOpen, setOpen] = useState(false);
-    const [minDate, setMinDate] = useState<DateObject | null>(null);
+    const [minDate, setMinDate] = useState<any | null>(null);
 
     const calcDiff = (startDate: DateObject | null, endDate: DateObject | null): string => {
         if (!startDate || !endDate) return "";
