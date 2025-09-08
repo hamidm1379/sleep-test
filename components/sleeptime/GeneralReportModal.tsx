@@ -46,7 +46,7 @@ export default function GeneralReportModal() {
                             </div>
                             <Link href="/generalreport">
                                 <div className="flex justify-center rounded-[8px] px-[24px] mt-4 mx-auto gap-2 max-[400px]:w-[280px] w-[320px] h-[48px] bg-white border-1 border-[#A85FFF] cursor-pointer hover:bg-[#e4dfe9]">
-                                    <button className='cursor-pointer'>
+                                    <button className='cursor-pointer text-black'>
                                         مشاهده کلی
                                     </button>
                                 </div>

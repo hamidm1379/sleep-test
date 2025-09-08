@@ -59,9 +59,9 @@ export default function AddSleepTime() {
                 <Sheet.Container>
                     <Sheet.Header />
                     <Sheet.Content>
-                        <p className='text-center text-[20px]'>ساعت خواب</p>
+                        <p className='text-center text-[20px] text-black'>ساعت خواب</p>
                         <div className='max-[400px]:w-[280px] w-80 mx-auto'>
-                            <div className='text-lg'>زمان شروع</div>
+                            <div className='text-lg text-black'>زمان شروع</div>
                             <div className='text-center mt-3'>
                                 <DatePicker
                                     key={1}
@@ -77,11 +77,12 @@ export default function AddSleepTime() {
                                     ]}
                                     minDate={minDate === null ? undefined : minDate}
                                     placeholder="زمان شروع"
+                                    className='text-gray-700'
                                 />
                             </div>
                         </div>
                         <div className='max-[400px]:w-[280px] w-80 mt-3 min-[400px]:mt-6 mx-auto'>
-                            <div className='text-lg'>زمان پایان</div>
+                            <div className='text-lg text-black'>زمان پایان</div>
                             <div className='text-center mt-3'>
                                 <DatePicker
                                     key={2}
@@ -97,19 +98,20 @@ export default function AddSleepTime() {
                                     ]}
                                     minDate={minDate === null ? undefined : minDate}
                                     placeholder="زمان پایان"
+                                    className='text-gray-700'
                                 />
                             </div>
                         </div>
                         <div className='max-[400px]:w-70 w-80 mt-3 min-[400px]:mt-6 mx-auto'>
-                            <div className='text-lg'>مدت زمان</div>
+                            <div className='text-lg text-black'>مدت زمان</div>
                             <div className='max-[400px]:w-full text-[14px] text-[#505050] my-auto w-80 h-10 px-4 py-1 bg-[#FAFAFA] mt-3 rounded-lg'>
-                                <p className='py-1.5'>{diff}</p>
+                                <p className='py-1.5 text-black'>{diff}</p>
                             </div>
                         </div>
 
                         <div className='max-[400px]:w-70 w-80 mx-auto mt-6'>
                             <div className='flex gap-2'>
-                                <div className='text-lg'>یادداشت</div>
+                                <div className='text-lg text-black'>یادداشت</div>
                                 <div className='text-[14px] text-[#909090] my-auto'>(اختیاری)</div>
                             </div>
                             <textarea

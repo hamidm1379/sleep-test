@@ -22,7 +22,7 @@ export default function Header({ title }: { title: string }) {
                         <RightArrowIcon />
                     </button>
                 </div>
-                <div className="text-[18px] md:text-[24px]">
+                <div className="text-[18px] md:text-[24px] text-black">
                     {title}
                 </div>
             </div>
