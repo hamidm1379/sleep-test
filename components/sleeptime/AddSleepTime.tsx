@@ -98,7 +98,7 @@ export default function AddSleepTime() {
                                     ]}
                                     minDate={minDate === null ? undefined : minDate}
                                     placeholder="زمان پایان"
-                                    className='text-gray-700'
+                                    className='text-red'
                                 />
                             </div>
                         </div>
